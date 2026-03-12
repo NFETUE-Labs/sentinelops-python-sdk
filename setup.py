@@ -1,9 +1,14 @@
 from setuptools import setup, find_packages
 
+with open("README.md", "r", encoding="utf-8") as f:
+    long_description = f.read()
+
 setup(
     name="sentinelops",
-    version="0.1.0",
+    version="0.1.1",
     description="Observability SDK for SentinelOps - instrument your app in 2 lines",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author="Nathanael Fetue",
     packages=find_packages(),
     install_requires=[
